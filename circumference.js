@@ -1,9 +1,10 @@
 // formula = 2 * PI * radius
 
-let pi = 3.14159;
+const PI = 3.14159;
 let radius;
 let circumference;
 
-radius = number(window.prompt("Enter the radius of your circle"));
-
-
+radius = prompt("Enter the radius of your circle");
+radius = Number(radius);
+circumference = 2 * pi * radius
+console.log(circumference);
