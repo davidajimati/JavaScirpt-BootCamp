@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+}
+
+.buttons {
+    display: flex;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    display: inline;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    margin: 10px;
+    color: white;
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+#reset {
+    background-color: blue;
+    border: none;
+}
+
+#increase {
+    background-color: green;
+}
+
+#decrease {
+    background-color: red;
+}
+
+#countFigure {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 100px;
+    color: black;
+    font-family:'Courier New', Courier, monospace
+}
