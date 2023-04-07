@@ -1,0 +1,30 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+div {
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    padding: 20px 10px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: blueviolet;
+    color: white;
+}
+
+button:hover {
+    opacity: 80%;
+}
