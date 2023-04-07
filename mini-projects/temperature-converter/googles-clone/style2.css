@@ -1,7 +1,7 @@
 body {
     background-color: #1e2022;
     color: #fff;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     padding: 30px;
     font-size: 14px;
 }
@@ -10,33 +10,86 @@ body {
     border: 1px solid #3c4043;
     display: flex;
     flex: 1;
+    align-content: flex-start;
+    align-items: flex-start;
     max-width: 600px;
     height: fit-content;
     padding: 20px;
+    padding-bottom: 80px;
     border-radius: 7px;
-
+    align-content: start;
+    align-items: start;
 }
 
 .inner_container {
     width: 400px;
     height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.temp_text,
+.label,
+.twin_box {
+    border: 1px solid #3c4043;
+}
+
+.temp_text,
+.label {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    background-color: #2e3032;
+    height: 30px;
+    padding-left: 10px;
 }
 
 .temp_text {
-    display: flex;
-    text-align: start;
-    width: 100%;
-    height: 30px;
-    border: 1px solid #3c4043;
-    align-items: center;
-    padding-left: 10px;
-    background-color: #2e3032;
+    max-width: 100%;
 }
 
-.temp_text:hover {
+.temp_text:hover,
+.label:hover {
     background-color: rgb(19, 19, 19);
 }
 
+
+.twin_mother {
+    display: flex;
+    padding: 0;
+    padding-top: 25px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
 .twin_box {
-    width: 40%;
+    flex-basis: 45%;
+    height: 75px;
+    margin: 0;
+    border-radius: 2px;
+    padding: 0;
+}
+
+.equal_to {
+    flex-basis: 10%;
+    font-size: 18px;
+    color: #bdc1c6;
+    display: inline;
+}
+
+.label {
+    color: #bdc1c6;
+    border-left: none;
+    border-right: none;
+}
+
+.result {
+    height: 35px;
+    padding: 5px;
+    max-width: 45%;
+    font-size: 30px;
+    text-align: center;
 }

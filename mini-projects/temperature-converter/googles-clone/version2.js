@@ -1,19 +1,23 @@
-document.getElementById("submit").onclick = function () {
-    console.clear()
-    // document.getElementById("answer").innerHTML = 0
-    let num = Number(document.getElementById("num").value)
-    let celsius = document.getElementById("celsius").checked
-    let fahren = document.getElementById("fahren").checked
+let far = Number(document.getElementById("celsius").innerHTML)
 
 
-    if (celsius) {
-        let a = (num - 32) * 5 / 9;
-        document.getElementById("answer").innerHTML = a + " ℃"
-    }
-    else if (fahren) {
-        let a = ((num * 9 / 5) + 32);
-        document.getElementById("answer").innerHTML = a + " ℉";
-    }
-    else
-        alert("You have not selected an option")
+document.getElementById("celsius").innerHTML = toCelsius(fahren);
+
+
+document.getElementById("celsius").onclick = function() {
+    let celsius = Number(document.getElementById("celsius").innerHTML)
+    document.getElementById("far").innerHTML = toFar(celsius);
+}
+
+document.getElementById("far").onclick = function() {
+    let far = Number(document.getElementById("far").innerHTML)
+    document.getElementById("celsius").innerHTML = toFar(far);
+}
+
+function toCelsius(far) {
+    return (far - 32) * 5 / 9;
+}
+
+function toFar(celsius) {
+    return ((num * 9 / 5) + 32);
 }
