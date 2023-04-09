@@ -71,6 +71,7 @@ class Student {
     }
 }
 
-const student1 = new Student("Mike", 19, 4.98);
+const student1 = new Student("Mike", 19);
 student1.study();
 console.log(student1.age);
+console.log(student1.gpa);
