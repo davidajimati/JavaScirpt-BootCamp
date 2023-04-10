@@ -1,6 +1,6 @@
-let date = new Date()
+setInterval(update, 1000);
 
-function formateDate(date) {
+function formatDate(date) {
     let day = date.getDate();
     let today = date.getDay();
     let month = date.getMonth();
@@ -83,17 +83,16 @@ function formateDate(date) {
             month = "December"
             break;
     }
-
     return `${today} ${day} ${month}, ${year}`
 }
 
 
-let time = date.toLocaleTimeString()
-let today = formateDate(date);
+function update() {
+    let date = new Date()
 
-console.log(time)
-console.log(today)
+    let time = date.toLocaleTimeString()
+    let today = formatDate(date);
 
-// let caller1 = setInterval(time, 10);
-// let caller2 = setInterval(today, 1000);
-
+    document.getElementById("digits").innerHTML = time;
+    document.getElementById("day_details").innerHTML = today;
+}
