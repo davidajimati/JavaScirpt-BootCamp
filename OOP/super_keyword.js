@@ -3,9 +3,9 @@
 class Animals {
     static animalCount = 0;
 
-    constructor(name, age, runSpeed) {
+    constructor(name, runSpeed) {
         this.name = name;
-        this._age = age;
+        this._age = 12;
         this.runSpeed = runSpeed;
         this._creature = "Animal";
     }
@@ -20,6 +20,15 @@ class Animals {
 
     get creature() {
         return `${this.name} is a ${this._creature}`
+    }
+
+    get age(){
+        return this._age;
+    }
+
+    set age(value){
+        if (value > 20)
+            this._age = 19.9;
     }
 }
 
@@ -43,7 +52,8 @@ class Fish extends Animals {
 }
 
 
-const fish1 = new Animals("Shark", 34, 56);
+const fish1 = new Animals("Shark", 56);
+fish1.age = 45;
 
 
 console.log(fish1.age);
