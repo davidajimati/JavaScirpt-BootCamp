@@ -5,7 +5,7 @@ class Animals {
 
     constructor(name, age, runSpeed) {
         this.name = name;
-        this.age = age;
+        this._age = age;
         this.runSpeed = runSpeed;
         this._creature = "Animal";
     }
@@ -16,6 +16,10 @@ class Animals {
 
     wake() {
         console.log(`${this.name} is awake`);
+    }
+
+    get creature() {
+        return `${this.name} is a ${this._creature}`
     }
 }
 
@@ -32,14 +36,14 @@ class Fish extends Animals {
         this.swimSpeed = swimSpeed;
         this._division = "Pisces"
     }
+
+    get division() {
+        return `${this.name} is a ${this._division}`
+    }
 }
 
-const fish1 = new Fish("Shark", 34, 56);
+
+const fish1 = new Animals("Shark", 34, 56);
+
 
 console.log(fish1.age);
-console.log(fish1.name);
-console.log(fish1.swimSpeed);
-console.log(fish1.division);
-console.log(fish1.creature);
-fish1.sleep();
-fish1.wake();
