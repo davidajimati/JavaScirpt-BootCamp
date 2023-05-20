@@ -1,5 +1,5 @@
 // import {PI, diameter, circumference, Area} from "./circle_maths.js"
-import * as MathCircle from "./circle_maths.js"
+import * as MathCircle from "./circle_util.js"
 CircleMath
 console.log(MathCircle.PI)
 console.log("circumference of circle" + MathCircle.circumference(10));

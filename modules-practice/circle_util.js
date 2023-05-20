@@ -1,4 +1,4 @@
-PI = Math.PI;
+const PI = Math.PI;
 
 export function circumference(radius) {
   return 2 * PI * radius;
