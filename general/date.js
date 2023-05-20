@@ -8,8 +8,8 @@
 
 // date = date.toLocaleString()
 // console.log(dayOfWeek);
-
-let date = new Date(2023, 3, 10, 12, 1)
+console.time("Process time")
+let date = new Date
 
 function formatDate(date) {
     let year = date.getFullYear()
@@ -25,10 +25,11 @@ function formatTime(date) {
     let seconds = date.getSeconds()
     let am_pm = hour >= 12 ? "pm":"am";
 
-    hour %= 12 || 12
+    // hour %= 12 || 12
 
     console.log(`${hour}:${minute}:${seconds} ${am_pm}`)
 }
 
 formatTime(date);
 formatDate(date);
+console.timeEnd("Process time")
