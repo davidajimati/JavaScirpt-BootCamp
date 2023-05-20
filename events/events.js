@@ -51,12 +51,14 @@ function doSomething() {
 // input.onchange = doSomething;
 
 const box = document.querySelector(".myDiv")
-box.onmouseover = changeBG;
-box.onmouseout = resetBG;
+// box.onmouseover = changeBG;
+// box.onmouseout = resetBG;
+box.onmouseup = changeBG
+box.onmousedown = resetBG;;
 
 function changeBG() {
   box.style.backgroundColor = "red";
 }
 function resetBG() {
-  box.style.backgroundColor = "lightblue";
+  box.style.backgroundColor = "black";
 }
