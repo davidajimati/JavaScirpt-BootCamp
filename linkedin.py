@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Simple Intro. Clocking in!
+Solving the world's problems, one line of code per time.
 """
 
 def check_trait(name):
